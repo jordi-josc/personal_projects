@@ -23,6 +23,10 @@ It can be installed in both environments: SaaS and SH.
 A lightweight module that enforces a **maximum discount limit per customer** on sales orders.
 It extends the `res.partner` model and integrates a validation in `sale.order.line` to ensure discounts do not exceed the configured limit.
 
+### [Sale Cancellation Reason](./sale_cancel_reason/)
+A module that enforces a **mandatory text explanation** when cancelling a Quotation or Sales Order.
+It intercepts the standard cancel button, opens a Wizard for user input, and permanently saves the reason in the order history for audit purposes.
+
 ### [Odoo Scripts](./odoo_scripts/)
 Collection of small, practical scripts for Odoo database and admin tasks.
 Includes utilities and one-off SQL scripts (example: `adapt_currency_decimal`). Each script has its own README with usage, safety notes, and examples.
